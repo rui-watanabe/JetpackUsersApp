@@ -20,4 +20,8 @@ class GetUsersUseCase @Inject constructor(
             emit(NetworkResponse.Failure<List<User>>(error.message.toString()))
         }
     }
+
+    fun onEach(any: Any) {
+
+    }
 }
