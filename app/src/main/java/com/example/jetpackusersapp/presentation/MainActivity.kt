@@ -14,6 +14,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.jetpackusersapp.presentation.ui.theme.JetpackUsersAppTheme
+import com.example.jetpackusersapp.presentation.users.UsersScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,7 +29,7 @@ class MainActivity : ComponentActivity() {
                     val navController = rememberNavController()
                     NavHost(navController = navController, startDestination = ScreenRoute.UsersScreen.route) {
                         composable(route = ScreenRoute.UsersScreen.route) {
-                            Text(text = "ユーザー一覧")
+                            UsersScreen()
                         }
                     }
                 }
