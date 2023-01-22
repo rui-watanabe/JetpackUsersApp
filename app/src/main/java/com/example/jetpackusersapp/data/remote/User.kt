@@ -5,7 +5,7 @@ import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)
-data class UsersDtoItem(
+data class User(
     val email: String?,
     val id: Int?,
     val name: String?,
